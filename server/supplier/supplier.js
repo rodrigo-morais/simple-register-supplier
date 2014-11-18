@@ -5,6 +5,8 @@ Meteor.methods({
         name: name,
         createdAt: new Date()
       });
-    console.log(name);
+  },
+  deleteSupplier: function(supplierId){
+    Suppliers.remove(supplierId);
   }
 });
