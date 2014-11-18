@@ -1,4 +1,10 @@
 <template name='home'>
+    <h2>Suppliers ({{suppliersCount}})</h2>
+    {{#linkTo route="suppliers.new" data=getData class="suppliers-new"}}
+      <span>
+        New Supplier
+      </span>
+    {{/linkTo}}
     <ul class="home-supplier">
         {{#each suppliers}}
             {{> supplier}}

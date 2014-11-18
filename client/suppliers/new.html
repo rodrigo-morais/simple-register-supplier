@@ -1,0 +1,12 @@
+<template name="suppliersNew">
+    <h2>New Supplier</h2>
+    <form class="new-supplier">
+        <input type="text" name="text" placeholder="Type to add new supplier" />
+        <button>Register</button>
+    </form>
+    {{#linkTo route="home" data=getData class="home-back"}}
+      <span>
+        Back
+      </span>
+    {{/linkTo}}
+</template>
